@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let numbers = [1,2,3,4,5,6,7,8];
+
+        // numbers.map((num)=>{return num*2})
+        // numbers.map((num)=>{if(num%2 ===0) return num})
+
+        // numbers.filter((num)=>{if(num%2===0) return num})
+
+        // numbers.filter((num)=>{if(num>5) return num})
+
+        // numbers.reduce((sum,num)=>{return sum+num},100)
+        
+
+// let z1 =10
+// let z2 =10
+
+// let z3 =[3,4,5]
+// let z4 =z3
+// let z5 =[3,4,5]
+
+//  console.log(z1===z2)  /* true*/
+//  console.log(z3===z4)  /* true*/
+//  console.log(z3===z5) /* false*/
+
+// z3.push(10)
+// z5.push(20)
+
+// console.log(z3) /* [3,4,5,10]*/
+// console.log(z4) /* [3,4,5,10]*/
+// console.log(z5) /* [3,4,5,20]*/
+
+// const t1 =[10,29,30]
+// const t2 =[...t1]  /* copy by value - spread operator*/
+
+// console.log(t1)
+// console.log(t2)
+// console.log(t1===t2)
+
+// // t2.push(70)
+// // console.log(t1)
+// // console.log(t2)
+
+// const a =[30,40,50]
+// const b =[70,1000,20]
+
+// const c = [...a,...b]
+// console.log(c)
+
+// let y1 =10
+// let y2 ="10"
+
+// // type cast - converting the string
+// console.log (y1==y2) /*  true typecasting allowed in == then checking value . sp it slower process*/
+// console.log (y1===y2) /* false typecasting not allowed in === only checking value so it is faster process*/
+// y1==y2 faster check only value
+// y1===y2 slower check value and data type
+
+// Array destructuring
+
+// const [g1,g2] = [5,6]
+
+// console.log (g1,g2)
+
+// const [g1,g2,g3] = [5,6]
+
+// console.log (g1,g2,g3)  /* value of g3 is undefined*/
+
+
+// const [g1,g2,g3=40] = [5,6] /* g3 =40 is default value  condtion is right side undefined value*/
+
+// console.log (g1,g2,g3)
+
+
+// const [g1,g2,g3=40] = [5,6,100] /* g3 =40 is default value will not retrived because  right side g3 has value no undefined value*/
+// console.log (g1,g2,g3)
+
+// const double =(n)=>[n,n*2]
+// const [h1,h2]=double(8)  ;/* 8,16 */
+// console.log(h1,h2)
+
+// function double(n){
+//     return [n,n*2]
+    
+// }
+// console.log(8)
+
+
+// const stud = {
+//     fname: "mani",
+//     lname: "Vani"
+    
+// }
+
+// function fullname(stud){  /* concatentation */
+
+// const msg = "welcome "  + stud.fname  + "," + stud.lname + "!!!"
+// return msg 
+
+// } 
+
+    //    function fullname(stud){  /* Template literal */
+
+    //        const msg =`welcome ${stud.fname}, ${stud.lname} !!`
+    //        return msg
+
+    //    } 
+
+
+//        function fullname(stud){  /* object destructuring */
+// const{fname, lname} = stud
+// const msg =`welcome ${fname}, ${lname} !!`
+// return msg
+
+// } 
+
+
+// function fullname({fname, lname}){  /* object destructuring */
+
+// return `welcome ${fname}, ${lname} !!!`
+
+
+// } 
+
+// const fullname =({fname,lname})=>`welcome ${fname}, ${lname} !!!`
+// console.log(fullname(stud))
+
+// const nums =[4,5,6,100]
+/* MAP - 
+input array length ===output arr length
+return new array
+Transformation of datatype 
+ */
+// console.log(nums.map(n=>n*2),nums)
+
+/* nameless function - anonymous function
+ */
+// const dbl =n=>n*2
+// console.log(nums.map(dbl))
+
+
+// const name =["Eswar","Hudha","Kabilan","Amrutha"]
+// /* transformation string to number */
+// console.log(name.map(name)=>name.length)
+
+
+
+// const students =[  /* Array of object transform in to string
+//  */
+//     {
+//         firstname: "kishore",
+//         lastname: "shankar"
+//     },
+
+//     {
+//         firstname: "Bala",
+//         lastname: "Manikandan"
+//     },
+
+//     {
+//         firstname: "Arthi",
+//         lastname: "Karunanithi"
+//     },
+
+//     {
+//         firstname: "Arul",
+//         lastname: "Selvi"
+//     },
+// ]
+
+// console.log(students.map({lastname,firstname}=>`welcome ${lastname}, ${firstname} !!)
+    
+const [name , age]= [25, "mani"]
+console.log (name,age)
+
+
+// const{name,age}={age: 15, name: "mani"}
+// console.log(name,age)
+
+
+
+</script>
+
+</body>
+</html>
